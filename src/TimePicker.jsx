@@ -108,10 +108,11 @@ export default class TimePicker extends PureComponent {
       name,
       required,
       value,
+      style
     } = this.props;
 
     return (
-      <div className={`${baseClassName}__wrapper`}>
+      <div className={`${baseClassName}__wrapper`} style={style ? style:''}>
         <TimeInput
           className={`${baseClassName}__inputGroup`}
           disabled={disabled}
